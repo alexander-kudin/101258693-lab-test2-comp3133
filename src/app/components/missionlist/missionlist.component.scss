@@ -1,0 +1,28 @@
+.gridItem{
+    border-radius: 5px;
+    box-shadow: 4px 3px 8px 0px rgba(168, 168, 168, 0.22);
+    transition-duration: 0.3s;
+    cursor: pointer;
+  
+    &:hover {
+      box-shadow: 4px 3px 11px 6px rgba(178, 178, 178, 0.46);
+      transform: translateY(-3px);
+    }
+}
+
+.image {
+    margin-bottom: 20px;
+}
+
+.missionCard {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.crop {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

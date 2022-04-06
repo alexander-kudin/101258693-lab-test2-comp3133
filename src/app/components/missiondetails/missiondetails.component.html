@@ -1,0 +1,28 @@
+<div style="min-width: 500px; max-width: 800px;">
+  <h2 mat-dialog-title>Mission – {{missionSelected.mission_name}}</h2>
+  <mat-dialog-content class="mat-typography">
+    <div style="display: flex; justify-content: space-between;">
+      <div>
+        <p>Name: {{missionSelected.mission_name}}</p>
+        <p>Launch Year: {{missionSelected.launch_year}}</p>
+      
+        <h3><b>Rocket</b></h3>
+        <p>Name: {{missionSelected.rocket.rocket_name}}</p>
+        <p>Type: {{missionSelected.rocket.rocket_type}}</p>
+      
+      </div>
+      <div style="width: 200px">
+        <img class="image" style="object-fit:contain; width: 200px; height: 200px" mat-card-sm-image src={{missionSelected.links.mission_patch}}>
+      </div>
+    </div>
+    <div>
+      <h3><b>Launch Site</b></h3>
+      <p>Name: {{missionSelected.launch_site.site_name_long}}</p>
+      <h3><b>Launch Details</b></h3>
+      <p>{{missionSelected.details}}</p>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+</div>
